@@ -1,10 +1,11 @@
 {
   "name": "@invisible/pegjs-import",
-  "version": "0.2.7",
+  "version": "1.0.0",
   "description": "Import other PEG files into a PEG.js grammar.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r test/setup test/spec/**/*.js"
+    "test": "mocha -r test/setup test/spec/**/*.js",
+    "posttest": "assert-version-bump"
   },
   "keywords": [
     "pegjs",
@@ -18,13 +19,14 @@
     "pegjs": "^0.10.0"
   },
   "devDependencies": {
+    "@invisible/publish": "^1.1.8",
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
   },
   "author": "Harry Schmidt",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "http://github.com/casetext/pegjs-import.git"
+    "type": "git",
+    "url": "http://github.com/invisible-tech/pegjs-imp.git"
   }
 }
