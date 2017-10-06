@@ -1,8 +1,10 @@
-# pegjs-import
+# @invisible/pegjs-import
 
-[![Build Status](https://travis-ci.org/casetext/pegjs-import.svg?branch=master)](https://travis-ci.org/casetext/pegjs-import)
+[![CircleCI](https://circleci.com/gh/invisible-tech/pegjs-imp/tree/master.svg?style=svg)](https://circleci.com/gh/invisible-tech/pegjs-imp/tree/master)
 
 Import other PEG files into a PEG.js grammar.
+
+Forked from [pegjs-import](https://github.com/casetext/pegjs-import).
 
 ## Installation
 
