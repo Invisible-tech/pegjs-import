@@ -1,6 +1,6 @@
 {
   "name": "@invisible/pegjs-import",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Import other PEG files into a PEG.js grammar.",
   "main": "index.js",
   "scripts": {
