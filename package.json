@@ -27,6 +27,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/invisible-tech/pegjs-imp.git"
+    "url": "http://github.com/invisible-tech/pegjs-import.git"
   }
 }
