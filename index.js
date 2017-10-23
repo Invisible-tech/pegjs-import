@@ -40,12 +40,22 @@ function buildParser(filename, options) {
         dependency.path = path.join(prospectivePath, 'index.peg');
       } else if (fs.existsSync(prospectivePath + '.peg')) {
         dependency.path = prospectivePath + '.peg';
+      } else if (fs.existsSync(prospectivePath + '.pegjs')) {
+        dependency.path = prospectivePath + '.pegjs';
       } else if (fs.existsSync(prospectivePath)) {
         dependency.path = prospectivePath;
       }
 
     } else {
-      dependency.path = require.resolve(dependency.path);
+      const resolvePath = filePath => {
+        if (path.parse(filePath).ext) return require.resolve(filePath)
+        try {
+          return require.resolve(`${filePath}.pegjs`)
+        } catch (e) {
+          return require.resolve(`${filePath}.peg`)
+        }
+      }
+      dependency.path = resolvePath(dependency.path);
     }
 
     var parser;
