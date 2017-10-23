@@ -66,4 +66,11 @@ describe('peg-import', function() {
 
   });
 
+  it('should infer the file extension on import', function() {
+
+    expect(function() {
+      pegimport.buildParser('test/fixtures/inferExtension.pegjs');
+    }).not.to.throw();
+
+  });
 });
