@@ -1,6 +1,6 @@
 {
   "name": "@invisible/pegjs-import",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Import other PEG files into a PEG.js grammar.",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "pegjs": "^0.10.0"
   },
   "devDependencies": {
+    "@invisible/grammar": "^0.0.1",
     "@invisible/publish": "^1.1.8",
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
