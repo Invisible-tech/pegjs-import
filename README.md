@@ -9,7 +9,7 @@ Forked from [casetext](https://github.com/casetext/pegjs-import).
 ## Installation
 
 ```
-npm install --save pegjs pegjs-import
+npm install --save pegjs @invisible/pegjs-import
 ```
 
 ## Usage
